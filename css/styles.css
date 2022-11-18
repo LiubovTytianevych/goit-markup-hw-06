@@ -634,20 +634,22 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     height: 30px;
     cursor: pointer;
 }
-.close-icon:hover {
-fill: #2196F3;
+.close-icon {
+    fill: black;
+    width: 18px;
+    height: 18px;
 }
+.close-icon:hover {
+    fill: #2196F3;
+    }
 .form-label {
     display: block;
     margin-bottom: 4px;
-     font-size: 12px;
-     line-height: 1.16;
-     letter-spacing: 0.01em;
-     color: #757575
-}
-.close-icon {
-    fill: black;
-}
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575
+    }
 .form-control {
     position: relative;
     margin-bottom: 10px;
@@ -657,8 +659,8 @@ fill: #2196F3;
     padding: 14px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: none;
     transition: border-color var(--transition-duration) var(--transition-timing-function);
+    outline: none;
 }
 .form-input:focus {
     border-color: var(--color-primary);
@@ -689,11 +691,88 @@ outline: none;
 .form-input:focus + .modal-icons {
     fill: var(--color-button);
 }
+
+      /* checkbox start  якась у мене біда з цим (((*/
+.form-checkbox {
+   /* margin-top: 20px;
+    --webkit-appearance: none;
+    --moz-appearance: none;
+    appearance: none;
+     */
+    position: absolute;
+  /*
+    width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+  */
+
+}
+.checkbox-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px; 
+    background-color: #fff;
+
+}
+
+.form-check-box {
+   
+}
+
+.form-checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     color: #757575;
+     letter-spacing: 0.03em;
+}
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    
+}
+.form-check-box:checked + .checkbox-icon {
+    background-color: #2196F3;
+   border-color: #2196F3;
+   background-image: url('../images/checkbox.svg');
+   background-size: contain;
+   background-origin: border-box;
+}
+.form-checkbox-label::before {
+content: " ";
+display: inline-block;
+border-color: #212121;
+border-radius: 2px;
+margin-right: 7px;
+}
+.form-contract {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(33, 150, 243, 1);
+}
+         /* checkbox end */
 .button-submit {
-    padding: 10px 52px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 135px;
+    margin-bottom: 40px;
+    padding: 10px  52px;
      background-color: #188ce8;  
      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
      border-radius: 4px;
      color: #fff;
      border: none;
+     cursor: pointer;
 }
